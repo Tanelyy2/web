@@ -131,7 +131,7 @@ h2{
     align-content: space-around;
 }
 .article {
-    background-color: #D5B087;
+    background-color: #92897e;
 margin: 20px;
     color: #ffffff;
      width: 45%;
@@ -145,7 +145,7 @@ footer{
     color:black;
 }
 .article:hover{
-    background-color: #7E9273;
+    background-color: #b66c6a;
 }
 .article > a{
     padding: 10px;
@@ -177,9 +177,7 @@ footer{
     align-items: flex-start;
     align-content: space-around;
 }
-.reg{
-    display: flex;
-}
+
 .forma{
     display: flex;
     padding: 20px;
