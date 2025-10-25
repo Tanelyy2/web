@@ -9,11 +9,14 @@
 
 header{
     height: 80px;
-    background-color: #515462;
-    color:black;
+    background-color: #7B6E69;
+    color:white;
     display :flex;
     justify-content: space-between;
     align-items: center;
+    display: flex;
+ padding: 20px;
+ position: relative;
 }
 .link{
     color: white;
@@ -22,9 +25,9 @@ header{
     display: flex;
     justify-content: center;
 align-items: center;
-width: 20%;
-font-size: 48px;
-font-weight:800 ;
+width: 30%;
+
+
 }
 header > nav{
     width: 55%;
@@ -38,7 +41,7 @@ main{
    
     min-height: 80vh;
     background: #ffffff;
-background: linear-gradient(180deg,rgba(255, 255, 255, 1) 49%, rgba(157, 174, 194, 1) 99%);
+background: radial-gradient(circle,rgba(255, 255, 255, 1) 21%, rgba(168, 158, 146, 1) 78%, rgba(123, 110, 105, 1) 100%);
 }
 ul{
 list-style: none;
@@ -64,4 +67,130 @@ h2{
 .first{
     display: flex;
     justify-content: space-between;
+}
+
+.hamburger {
+ display: none;
+ background: none;
+ border: none;
+ font-size: 24px;
+ cursor: pointer;
+ order: 1;
+}
+
+.nav1 {
+ display: flex;
+ gap: 20px;
+}
+
+.nav1 a {
+    text-decoration: none;
+}
+.hamburger {
+ display: none;
+}
+
+.nav1 {
+ display: flex;
+}
+@media (max-width: 768px) {
+ .hamburger {
+  display: block;
+  z-index: 1001;
+ }
+
+ .nav1 {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 80%;
+  height: 100vh;
+  background: #36312D;
+  transition: right 0.3s;
+  z-index: 1000;
+  padding-top: 60px;
+  flex-direction: column;
+  gap: 15px;
+  padding: 60px 20px 20px;
+ }
+
+ .nav1.active {
+  right: 0;
+ }
+
+ .nav1 a {
+  padding: 10px;
+  color: white;
+ }
+}
+.second{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+}
+.article {
+    background-color: #D5B087;
+margin: 20px;
+    color: #ffffff;
+     width: 45%;
+     height: 210px;
+    
+}
+footer{
+    background-attachment: fixed;
+    background-color: #7B6E69;
+    height: 50px;
+    color:black;
+}
+.article:hover{
+    background-color: #7E9273;
+}
+.article > a{
+    padding: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    display: inline-block;
+    text-decoration: none;
+    color : black;
+}
+.cafe{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+}
+.img2{
+    width: 31%;
+    height: calc(100% - 20px);
+    padding: 10px;
+}
+.nazv{
+    padding: 10px;
+}
+.fut{
+     display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    align-content: space-around;
+}
+.reg{
+    display: flex;
+}
+.forma{
+    display: flex;
+    padding: 20px;
+}
+
+.img4{
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+}
+
+.gg{
+    padding: 10px;
 }
